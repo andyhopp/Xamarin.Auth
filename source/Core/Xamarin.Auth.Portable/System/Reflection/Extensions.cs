@@ -34,7 +34,7 @@ namespace System.Reflection
 
         public static TypeCode GetTypeCode(this Type type)
         {
-            #if (NETFX_CORE || PCL) && !NETSTANDARD1_6
+            #if (NETFX_CORE || PCL) && !(NETSTANDARD1_6 || NETSTANDARD2_0)
             if (type == null)
 			{
 				return TypeCode.Empty;

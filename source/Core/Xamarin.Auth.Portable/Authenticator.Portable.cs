@@ -28,7 +28,7 @@ using AuthenticateUIType = MonoTouch.UIKit.UIViewController;
 using AuthenticateUIType = System.Uri;
 #elif PORTABLE
 using AuthenticateUIType = System.Object;
-#elif NETSTANDARD1_6
+#elif NETSTANDARD1_6 || NETSTANDARD2_0
 using AuthenticateUIType = System.Object;
 #endif
 
